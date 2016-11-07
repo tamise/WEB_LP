@@ -1,0 +1,154 @@
+// fichiers à importer
+
+@import "bases/reset.scss";
+@import "bases/variables.scss";
+@import "bases/mixins";
+
+/* styles spéciliques au site */
+h1 {
+	font-size: 22px;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+h2 {
+	font-size: 16px;
+}
+
+h3 {
+	font-size: 14px;
+}
+
+h4 {
+	font-size: 12px;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+body {
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	color :$color-gris-fonce;
+}
+//-------------------------
+// HEADER
+//-------------------------
+
+#en_tete {
+ 	height: 50px;
+ 	display: flex;
+ 	justify-content: space-between;
+ 	img {
+ 		width: auto;
+ 		padding: 7px 0 7px 0;
+ 		text-align : left;
+ 	}
+ 	h2 {
+ 		width: 80%;
+ 		text-align: right;
+ 		padding-right: 4%;
+ 		padding-top: 18px;
+ 	}
+}
+
+nav {
+	height: 32px;
+	background-color: $color-bleu;
+	text-align: right;
+	padding : 0 4%;
+	li:nth-child(1) {
+		background-color : $color-gris-clair;
+	}
+	li {
+		display: inline-block;
+		padding: 10px 10px 7px;
+		text-transform: uppercase;
+		color: $color-gris-fonce;
+			a {
+				text-decoration: none;
+				color: white;
+			}		
+	}
+	li:last-child {
+		padding-right: 0;
+	}
+
+}
+
+//-------------------------
+// MAIN
+//-------------------------
+
+main {
+	background-color: $color-gris-clair;
+	display: flex;
+	img {
+		width: 45%;
+		padding-left: 4%;
+	}
+	#main_texte {
+		width : auto;
+		text-align: right;
+		padding-right: 4%;
+		h1 {
+			line-height: 1.4em;
+			padding-top: 1.5em;
+			padding-bottom: 1.5em;
+		}
+		ul{
+			padding-top: 1.5em;
+			padding-bottom: 1.5em;
+			line-height: 1.2em;
+		} 
+	}
+}
+
+//-------------------------
+// FORMULAIRE
+//-------------------------
+
+#formulaire {
+	background-color: $color-bleu;
+	color: #fff;
+	#2fieldset {
+		display: flex;
+	}
+
+}
+
+//-------------------------
+// AUTRES
+//-------------------------
+
+#autres {
+
+}
+
+//-------------------------
+// QUI ?
+//-------------------------
+
+#qui {
+	background-color: $color-gris-fonce;
+	color: #fff;
+	#chiffres {
+		display: flex;
+	}
+
+}
+
+//-------------------------
+// CLIENTS
+//-------------------------
+
+
+
